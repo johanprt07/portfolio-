@@ -39,8 +39,7 @@ body{
 ::-webkit-scrollbar-track{background:var(--bg2);}
 ::-webkit-scrollbar-thumb{background:#444444;border-radius:3px;}
 
-/* ===== BG ORBS ===== */
-.bg-orbs{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+ .bg-orbs{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
 .orb{position:absolute;border-radius:50%;filter:blur(120px);opacity:0.9;}
 .orb1{width:800px;height:800px;background:rgba(220,220,220,0.18);top:-150px;right:-150px;animation:f1 12s ease-in-out infinite;}
 .orb2{width:700px;height:700px;background:rgba(200,200,200,0.14);bottom:-100px;left:-150px;animation:f2 15s ease-in-out infinite;}
@@ -48,16 +47,15 @@ body{
 @keyframes f1{0%,100%{transform:translateY(0);}50%{transform:translateY(-35px);}}
 @keyframes f2{0%,100%{transform:translateY(0);}50%{transform:translateY(28px);}}
 
-/* ===== GRAIN OVERLAY ===== */
+/
 .grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:0.025;
 background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 background-size:200px;}
 
-/* ===== PROGRESS ===== */
 #progress-bar{position:fixed;top:0;left:0;right:0;height:2px;z-index:200;transform-origin:left;transform:scaleX(0);
 background:linear-gradient(90deg,#888888,#ffffff,#aaaaaa);transition:transform 0.08s;}
 
-/* ===== NAVBAR ===== */
+
 nav{
   position:fixed;top:2px;left:0;right:0;z-index:100;
   padding:0 2.5rem;height:62px;
@@ -129,7 +127,7 @@ nav.scrolled{border-color:rgba(255,255,255,0.15);}
 .lang-spin{width:12px;height:12px;border:2px solid rgba(255,255,255,0.1);border-top-color:#ffffff;border-radius:50%;animation:spin 0.6s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg);}}
 
-/* ===== SECTION BASE ===== */
+
 section{
   position:relative;z-index:2;
   max-width:980px;margin:0 auto;
@@ -147,7 +145,7 @@ section:first-of-type{padding-top:150px;}
 .grad-text{color:#ffffff;}
 .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),rgba(255,255,255,0.05),transparent);margin:0 2rem;}
 
-/* ===== HERO ===== */
+
 #accueil{padding-top:160px;text-align:center;}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
@@ -211,7 +209,7 @@ section:first-of-type{padding-top:150px;}
 }
 @keyframes cvpulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.7);}}
 
-/* ===== STATS ===== */
+
 .stats-bar{
   display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
   background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);
@@ -225,7 +223,7 @@ section:first-of-type{padding-top:150px;}
 }
 .stat-l{font-size:10px;color:var(--gray);margin-top:5px;font-family:'DM Mono',monospace;letter-spacing:0.5px;}
 
-/* ===== SKILLS ===== */
+
 .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .skill-group{
   background:#141414;border:1px solid rgba(255,255,255,0.1);
@@ -255,7 +253,7 @@ section:first-of-type{padding-top:150px;}
 .sk-fill{height:100%;border-radius:2px;transform-origin:left;transform:scaleX(0);transition:transform 1.3s cubic-bezier(0.16,1,0.3,1),filter 0.35s;}
 .sk-fill.on{transform:scaleX(1);}
 
-/* ===== COMPETENCES ===== */
+
 .comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .comp-card{
   background:#141414;border:1px solid rgba(255,255,255,0.1);
@@ -293,7 +291,7 @@ section:first-of-type{padding-top:150px;}
 .cc-task{font-size:11px;color:var(--gray);display:flex;align-items:flex-start;gap:6px;line-height:1.4;transition:color 0.35s;}
 .cc-task::before{content:'›';color:#666666;flex-shrink:0;font-weight:700;}
 
-/* ===== EXPERIENCE ===== */
+
 .exp-entry{display:flex;gap:20px;margin-bottom:14px;}
 .exp-left{display:flex;flex-direction:column;align-items:center;padding-top:5px;width:18px;flex-shrink:0;}
 .exp-dot{
@@ -357,7 +355,7 @@ section:first-of-type{padding-top:150px;}
 }
 .exp-entry:hover .ec-tag{border-color:rgba(255,255,255,0.06);color:var(--violet-soft);}
 
-/* ===== CONTACT ===== */
+
 #contact{padding-bottom:120px;}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .contact-card{
@@ -397,7 +395,7 @@ textarea{min-height:100px;}
 }
 .form-submit:hover{transform:translateY(-2px);background:#000000;color:#ffffff;box-shadow:0 0 30px rgba(255,255,255,0.15);}
 
-/* ===== FOOTER ===== */
+
 footer{
   position:relative;z-index:2;
   text-align:center;padding:2rem;
@@ -406,7 +404,7 @@ footer{
 }
 footer span{color:var(--violet2);}
 
-/* ===== DOC MODAL ===== */
+
 .doc-modal-overlay{
   position:fixed;inset:0;z-index:999;
   background:rgba(0,0,0,0.9);
@@ -466,12 +464,12 @@ footer span{color:var(--violet2);}
 }
 .doc-modal-unsupported a:hover{background:#e0e0e0;}
 
-/* ===== REVEAL ===== */
+
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease;}
 .reveal.on{opacity:1;transform:none;}
 .d1{transition-delay:0.08s;}.d2{transition-delay:0.16s;}.d3{transition-delay:0.24s;}.d4{transition-delay:0.32s;}
 
-/* ===== RESPONSIVE ===== */
+
 @media(max-width:680px){
   nav{padding:0 1rem;}
   .nav-links{display:none;}
@@ -494,7 +492,7 @@ footer span{color:var(--violet2);}
 <div class="grain"></div>
 <div id="progress-bar"></div>
 
-<!-- NAV -->
+
 <nav id="navbar">
   <a href="#accueil" class="nav-logo">Johan Peret</a>
   <div class="nav-links">
@@ -526,7 +524,7 @@ footer span{color:var(--violet2);}
   </div>
 </nav>
 
-<!-- HERO -->
+
 <section id="accueil">
   
   <h1 class="hero-title">
@@ -554,7 +552,7 @@ footer span{color:var(--violet2);}
 
 <div class="divider"></div>
 
-<!-- SKILLS -->
+
 <section id="skills">
   <div class="section-tag">competences-techniques</div>
   <h2 class="section-title" data-translate>Mes <span class="grad-text">skills</span></h2>
@@ -593,7 +591,6 @@ footer span{color:var(--violet2);}
 
 <div class="divider"></div>
 
-<!-- REFERENTIEL -->
 <section id="referentiel">
   <div class="section-tag">referentiel-bts</div>
   <h2 class="section-title" data-translate>Référentiel de <span class="grad-text">compétences</span></h2>
@@ -667,7 +664,7 @@ footer span{color:var(--violet2);}
 
 <div class="divider"></div>
 
-<!-- EXPERIENCE -->
+
 <section id="experience">
   <div class="section-tag">experiences.log</div>
   <h2 class="section-title" data-translate>Mes <span class="grad-text">expériences</span></h2>
@@ -732,7 +729,7 @@ footer span{color:var(--violet2);}
 
 <div class="divider"></div>
 
-<!-- CONTACT -->
+
 <section id="contact">
   <div class="section-tag">contact.json</div>
   <h2 class="section-title" data-translate><span class="grad-text">Contactez</span>-moi</h2>
@@ -785,14 +782,13 @@ footer span{color:var(--violet2);}
   <p>Fait avec ♥ par <span style="color:#ffffff;">Johan Peret</span> · Efrei Paris BTS SIO · 2026</p>
 </footer>
 
-<!-- TRANSLATING TOAST -->
 <div class="lang-translating" id="lang-translating">
   <div class="lang-spin"></div>
   <span>Traduction en cours...</span>
 </div>
 
 <script>
-// ===== AZURE TRANSLATOR =====
+
 document.addEventListener("DOMContentLoaded", saveOriginals);
 const AZURE_KEY = 'DrYU2qHnD1AN515TZ2vgZd5zA4MLklqh9PFZGNtWIcex3S4Iige1JQQJ99CDACfhMk5XJ3w3AAAAACOG4EjL';
 const AZURE_ENDPOINT = 'https://api.cognitive.microsofttranslator.com/translate';
@@ -802,7 +798,7 @@ let currentLang = 'fr';
 let originalTexts = new Map();
 let langMenuOpen = false;
 
-// Save all translatable text nodes on first load
+
 function saveOriginals() {
   const els = document.querySelectorAll('[data-translate]');
   els.forEach(el => {
@@ -836,23 +832,22 @@ async function setLang(lang, flag, label) {
   currentLang = lang;
 
   if (lang === 'fr') {
-    // Restore originals
+
     originalTexts.forEach((html, el) => { el.innerHTML = html; });
     return;
   }
 
-  // Show toast
+
   const toast = document.getElementById('lang-translating');
   toast.classList.add('show');
 
-  // Collect all translatable elements
   const els = document.querySelectorAll('[data-translate]');
   if (originalTexts.size === 0) saveOriginals();
 
-  // Extract text content (strip HTML tags for translation)
+
   const texts = Array.from(els).map(el => {
     const orig = originalTexts.get(el) || el.innerHTML;
-    // Strip tags for pure text
+
     const tmp = document.createElement('div');
     tmp.innerHTML = orig;
     return tmp.textContent || tmp.innerText || '';
@@ -988,14 +983,14 @@ async function setLang(lang, flag, label) {
 .chat-send:disabled{background:#333333;cursor:not-allowed;}
 </style>
 
-<!-- Bubble -->
+
 <button class="chat-bubble" id="chat-bubble" onclick="toggleChat()">
   <span class="chat-pulse"></span>
   <svg class="icon-chat" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
   <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
 </button>
 
-<!-- Window -->
+
 <div class="chat-window" id="chat-window">
   <div class="chat-header">
     <div class="chat-avatar">JP</div>
@@ -1157,7 +1152,7 @@ async function sendMessage(text) {
 }
 </script>
 
-<!-- DOC MODAL -->
+
 <div class="doc-modal-overlay" id="doc-modal-overlay" onclick="closeDocModal(event)">
   <div class="doc-modal">
     <div class="doc-modal-header">
@@ -1218,7 +1213,7 @@ function closeDocModalDirect() {
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDocModalDirect(); });
 
-// FORMSPREE
+
 const form = document.getElementById('contact-form');
 if(form) {
   form.addEventListener('submit', async function(e) {
@@ -1247,7 +1242,7 @@ if(form) {
   });
 }
 
-// PROGRESS
+
 const pb = document.getElementById('progress-bar');
 window.addEventListener('scroll', () => {
   const pct = window.scrollY / (document.documentElement.scrollHeight - innerHeight);
@@ -1256,7 +1251,7 @@ window.addEventListener('scroll', () => {
   updateNav();
 });
 
-// ACTIVE NAV
+
 function updateNav(){
   const ids = ['accueil','skills','referentiel','experience','contact'];
   const labels = ['Accueil','Skills','Référentiel','Expériences','Contact'];
@@ -1268,7 +1263,7 @@ function updateNav(){
   document.querySelectorAll('.nav-link').forEach((l,i) => l.classList.toggle('active', i===cur));
 }
 
-// TYPEWRITER
+
 const roles = ['Apprenti Technicien Support IT','BTS SIO SISR · Efrei Paris','Support N1/N2 · ServiceNow','Admin Systèmes & Réseaux','Technicien IT · Chubb Fire & Security'];
 let ri=0,ci=0,del=false;
 const tw = document.getElementById('typewriter');
@@ -1280,14 +1275,14 @@ function type(){
 }
 setTimeout(type,900);
 
-// COUNT UP
+
 function countUp(el, target){
   let n=0;const dur=1200;const start=Date.now();
   const tick=()=>{const p=Math.min((Date.now()-start)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=Math.round(e*target);if(p<1)requestAnimationFrame(tick);else el.textContent=target;};
   requestAnimationFrame(tick);
 }
 
-// REVEAL OBSERVER
+
 const obs = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
@@ -1299,7 +1294,7 @@ const obs = new IntersectionObserver(entries=>{
 },{threshold:0.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// SMOOTH SCROLL
+
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
     const t=document.querySelector(a.getAttribute('href'));
@@ -1307,7 +1302,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-// FORM
+
 function submit(){
   const btn=document.querySelector('.form-submit');
   if(!document.getElementById('fn').value||!document.getElementById('fe').value){
